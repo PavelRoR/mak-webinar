@@ -6,6 +6,14 @@
 -var fav_ico = 'favicon.ico';
 -var fav_png = 'favicon.png';
 
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b1(cl,p)
+	button.button.button-1(data-toggle="modal" data-target="#Modal")=p
+mixin b2(cl,p)
+	button.button.button-2(class=cl type="submit")
+		span=p
+
 <!DOCTYPE html>
 html(lang="ru")
 	head

@@ -1,8 +1,69 @@
+M = 'Montserrat', sans-serif;
+MB = 'MontserratBold', sans-serif;
+OSSB = 'OpenSansSemibold', sans-serif;
+OSB = 'OpenSansBold', sans-serif;
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat.eot');
+	src: url('../fonts/Montserrat.eot') format('embedded-opentype'),
+		 url('../fonts/Montserrat.woff2') format('woff2'),
+		 url('../fonts/Montserrat.woff') format('woff'),
+		 url('../fonts/Montserrat.ttf') format('truetype'),
+		 url('../fonts/Montserrat.svg#Montserrat') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MontserratBold';
+	src: url('../fonts/MontserratBold.eot');
+	src: url('../fonts/MontserratBold.eot') format('embedded-opentype'),
+		 url('../fonts/MontserratBold.woff2') format('woff2'),
+		 url('../fonts/MontserratBold.woff') format('woff'),
+		 url('../fonts/MontserratBold.ttf') format('truetype'),
+		 url('../fonts/MontserratBold.svg#MontserratBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/OpenSansSemibold.eot');
+	src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+		 url('../fonts/OpenSansSemibold.woff') format('woff'),
+		 url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+		 url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+	font-display: fallback;
+	font-weight: 600
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansBold.woff') format('woff'),
+		 url('../fonts/OpenSansBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+
+@import '../_css/bootstrap.min.css'
+@import '../_css/jquery.fancybox.min.css'
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-size: 16px
+	font-family: M
+	color #0c2902
+	background-color: #fff
 a
 	color: #fefefe
 	&:focus
@@ -44,13 +105,79 @@ footer
 		height 100%
 		display block
 		background-color #000
-		border-radius 3px
+		// border-radius 3px
 		border: 0
 		top 0
 		left 0
 		right 0
 		bottom 0
 		cursor pointer
+.general-title
+	font-size: 30px;
+	font-family: OSB
+	color: rgb(63, 85, 18);
+	line-height: 1.2;
+	text-align: left;
+	margin-bottom: 55px
+.button
+	display block
+	margin 0 auto
+	text-align: center
+	transition: all .3s ease
+	font-size: 16px
+	font-family: OSSB
+	text-decoration: none
+	width 100%
+	border 1px solid
+	cursor pointer
+	&-1
+		border-color rgb(35, 41, 57);
+		background-color: rgb(204, 204, 255);
+		max-width: 350px;
+		padding: 20px 10px
+		color #000
+		&:focus
+			color #000
+			background-color: rgb(204, 204, 255);
+		&:hover
+			// color rgb(204, 204, 255);
+			// border-color: rgb(204, 204, 255);
+			background-color: transparent
+	&-2
+		border-color rgb(150, 150, 150);
+		max-width: 239px;
+		span
+			background-color: rgb(242, 58, 58);
+			color #fff
+			display block
+			padding 18px 10px
+			border 6px outset #FF8080
+		&:focus
+			& span
+				color #fff
+				background-color: rgb(242, 58, 58);
+		&:hover
+			border-color: rgb(242, 58, 58);
+			& span
+				border-style: inset
+.general-list
+	li
+		list-style: none
+		padding-left: 30px
+		margin-bottom: 10px
+		position relative
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content ''
+			display block
+			width 11px
+			height 11px
+			border-radius: 50px
+			position: absolute
+			left 0
+			top 7px
+			background-color: #CDCDFF
 
 @import '0.header'
 @import 'main/1.main'
