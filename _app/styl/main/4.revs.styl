@@ -1,7 +1,57 @@
+#revs
+	padding 50px 0
+.speaker
+	overflow hidden
+	margin-bottom: 30px
+	color #2a251d
+	&-img
+		float left
+		margin 0 10px 10px 0
+	&-info
+		&-title
+			font-size: 18px
+			font-family: OSB
+			margin-bottom: 10px
+		&-subtitle
+			font-size: 13px
+.speak-text
+	margin-bottom: 15px
+	color #2a251d
+	&:last-of-type
+		margin-bottom: 0
+	&.speak-text-bq
+		font-weight: bold
+.carousel-inner .item  img
+	border: 3px solid #ccccff
+#text-revs
+	.text-rev-img
+		height 312px
+		object-fit: contain
+		object-position: center
+		width 100%
+		background-color #fff
 .carousel-indicators
 	position static
-	margin 20px auto 0
+	margin 5px auto 0
+	li
+		border-color: #ccccff
+		transition: all .2s ease
+	.active
+		background-color: #ccccff
 .carousel-control
-	height 45px
+	height 40px
+	width 30px
 	top auto
-	bottom 0
+	bottom -20px
+	opacity 1
+	background-color: transparent
+	&.left
+	&.right
+		background-image url(../img/icons/slider-arrow.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+	&.right
+		transform: rotate(180deg)
+	&:hover
+		opacity .8

@@ -1,0 +1,43 @@
+#for
+	padding 100px 0 50px
+.for-item
+	position relative
+	padding 25px 400px 25px 30px
+	border: 2px dashed rgba(#232939, .4)
+	width 100%
+	max-width 1024px
+	margin 0 auto 40px
+	&:before
+		content: ''
+		display block
+		position: absolute
+		width: 71px
+		height 71px
+		background-color: #ccccff
+		top -56px
+		left -56px
+		background-repeat no-repeat
+		background-position: center
+	&-1
+		&:before
+			background-image url(../img/images/1.png)
+	&-2
+		&:before
+			background-image url(../img/images/2.png)
+	&-3
+		&:before
+			background-image url(../img/images/3.png)
+	&-4
+		&:before
+			background-image url(../img/images/4.png)
+	&-img
+		position: absolute
+		right -55px
+		top calc(50% - 144px)
+	&-title
+		font-size: 18px
+		font-family: OSB
+		margin-bottom: 25px
+.general-list-for-item
+	li
+		color #0c2902
