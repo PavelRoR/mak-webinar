@@ -1,3 +1,5 @@
+<!-- Копия Масюль -->
+<?php require_once('../date/date.php');?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -42,7 +44,7 @@
             <h2 class="main-subtitle">Начните получать высокий доход от консультирования с помощью эффективного психологического метода!</h2>
           </div>
           <div class="col-md-5 col-sm-6 col-md-offset-2 col-sm-offset-0">
-            <p class="main-info">Даты проведения: <span>xx - xx месяца, в 19:00(мск)</span></p>
+            <p class="main-info">Даты проведения: <span><?= $dateDay1Text;?> <?= $dateMonthTextP;?> - <?= $dateDay2Text;?> <?= $dateMonthText;?>, в 19:00(мск)</span></p>
             <div class="video-wrapper video-wrapper-main">
               <iframe src="https://www.youtube.com/embed/GE65RLCYMZ0?mute=1&amp;autoplay=1" allowfullscreen="allowfullscreen"></iframe>
             </div>
@@ -333,7 +335,9 @@
         </div>
       </div>
     </div>
-    <script src="../js/wh.min.js"></script><!-- AutoWebOffice: UTM or OpenStat Counter -->
+    <script src="../js/wh.min.js"></script>
+    <!-- BEGIN JIVOSITE CODE {literal} --><script src="//code.jivosite.com/widget.js" data-jv-id="UPm98E8VpR" async="async"></script><!-- {/literal} END JIVOSITE CODE -->
+    <!-- AutoWebOffice: UTM or OpenStat Counter -->
     <script type="text/javascript">var url = "https://shop.mastervision.su/?r=api/utmopenstat";</script>
     <script type="text/javascript" src="https://shop.mastervision.su/js/utm_openstat.js" defer="defer"></script><!-- /AutoWebOffice: UTM or OpenStat Counter -->
   </body>
