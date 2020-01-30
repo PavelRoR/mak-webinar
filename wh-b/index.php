@@ -208,7 +208,7 @@
             </div>
           </div>
         </div>
-        <div id="revs">
+        <div class="revs">
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <div class="carousel slide" id="text-revs" data-ride="carousel" data-interval="false">
